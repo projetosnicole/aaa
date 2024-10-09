@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+</head>
+<style>
+     body {
+            background: linear-gradient(to right, #050205, #2C172F);
+            color: white;
+            margin: 0; 
+            padding: 0; 
+            display: flex;
+            flex-direction: column; 
+        }
+        header {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            z-index: 1000; 
+        }
+        .back-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-top: 4%;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 4%;
+        }
+        .container {
+            margin-right: 0;
+            border-radius: 50px;
+            background-color: white;
+            color: black; 
+            width: auto;
+            height: 600px; 
+            padding: 5%;
+            margin-top: 100px; 
+            overflow: auto;
+            display: flex;
+            flex-direction: column; 
+        }
+        .img {
+            width: 220px;
+            height: 200px;
+            background-color: #ccc; 
+            border-radius: 50px;
+            margin-bottom: 20px; 
+          }
+        .theme-title {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 0px 0;
+            text-align: center;
+        }
+        .details {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 20px; 
+        }
+        .ods{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .barra {
+            position: relative; 
+            width: 80%; 
+            height: 1px; 
+            background-color: transparent; 
+            margin: 20px 0;
+        }
+        .linha {
+            height: 1px; 
+            background-color: #ccc; 
+            width: 100%; 
+            position: absolute; 
+            top: 50%; 
+            left: 0; 
+        }
+</style>
+<body>
+    <header>
+        <button class="back-button">&lt;</button>
+        <span class="title">Stand</span>
+    </header>
+    <div class="container">
+        <div class="img"></div>
+        <div class="theme-title">Tema</div>
+        <div class="details">Turma</div>
+        <div class="ods">ODS #</div>
+        <div class="barra">
+            <div class="linha"></div>
+        </div>
+        <div class="details">Integrantes:</div>
+        <div class="resposta">texto...</div>
+        <div class="barra">
+            <div class="linha"></div>
+        </div>
+        <div class="details">Descrição do projeto:</div>
+        <div class="resposta-1">texto...</div>
+        <div class="barra">
+            <div class="linha"></div>
+        </div>
+        <button class="button">Avaliar</button>
+    </div>
+</body>
+</html>
